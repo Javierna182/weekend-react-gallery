@@ -1,7 +1,14 @@
 import './GalleryList.css';
+import { GalleryItem } from '../GalleryItem/GalleryItem'
 
 export function GalleryList({imagesGallery}) {
   return(
-    <div>images</div>
+    <ul>
+      {
+        imagesGallery.map(image => (
+          <GalleryItem key={image.id} image={image} />
+        ))
+      }
+    </ul>
   );
 }

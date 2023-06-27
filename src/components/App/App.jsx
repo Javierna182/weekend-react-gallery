@@ -10,7 +10,7 @@ function App() {
 
   //to get the Images
   const fetchGalleryImages = () => {
-    fetch("/gallery'")
+    fetch('/gallery')
       .then((response) => {
         console.log('Entire GET response:', response);
         return response.json();
