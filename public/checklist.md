@@ -3,7 +3,7 @@
 -- GalleryItem - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.
 
 
-[]Use axios to retrieve (GET) data from to /gallery and store it in App.jsx.
+[x]Use axios to retrieve (GET) data from to /gallery and store it in App.jsx.
 []Create a new component for the GalleryList and pass it the gallery data stored in App via props.
    []Iterate (loop over) the list of gallery data
    []Make GalleryItems

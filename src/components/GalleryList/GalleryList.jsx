@@ -1,7 +1,7 @@
 import './GalleryList.css';
 import { GalleryItem } from '../GalleryItem/GalleryItem'
 
-export function GalleryList({imagesGallery}) {
+export function GalleryList({imagesGallery, likeButton}) {
   return(
     <div>
       <h1>Gallery of My Life</h1>
@@ -9,7 +9,7 @@ export function GalleryList({imagesGallery}) {
     <ul>
       {
         imagesGallery.map(image => (
-          <GalleryItem key={image.id} image={image} />
+          <GalleryItem key={image.id} image={image} likeButton={likeButton} />
         ))
       }
     </ul>
