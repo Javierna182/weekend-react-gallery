@@ -62,7 +62,7 @@ function App() {
           <GalleryItem />
         </Route> */}
 
-        <img src="images/goat_small.jpg"/>
+        {/* <img src="images/goat_small.jpg"/> */}
       </div>
     );
 }
