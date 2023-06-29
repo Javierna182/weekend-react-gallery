@@ -18,11 +18,16 @@ export function GalleryItem({ image, likeButton }) {
         // <div onClick={() => alert(`${image.src} You Clicked an image`)}>
         //     {image.src}
         <div style={{float:'left'}} >
-            
-            { !isHidden ? <p class="desc">Description: {image.description}</p> : <img src={image.path}/> }
+            <div className="card">
+            <div className="card-header">
+            { !isHidden ? <p className="desc">{image.description}</p> : <img src={image.path}/> }
+            <div className="card-body">
             <p>Likes:{image.likes}</p>
-            <button onClick={()=> likeButton(image.id)}>Like</button>
-            <button onClick={toggleDescription}>Hide Description</button>
+            <button className="likebtn" onClick={()=> likeButton(image.id)}>Like</button>
+            <button className="switchbtn" onClick={toggleDescription}>Switch</button>
+        </div>
+        </div>
+        </div>
         </div>
     )
 }

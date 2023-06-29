@@ -5,7 +5,7 @@ import './GalleryList.css';
 export function GalleryList({imagesGallery, likeButton}) {
   return(
     <div>
-      <h1>Gallery of My Life</h1>
+      <h1>MEMORIES</h1>
 
     <div>
       {
