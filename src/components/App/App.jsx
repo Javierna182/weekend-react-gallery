@@ -15,7 +15,7 @@ function App() {
 
   useEffect( () => {
     fetchGalleryImages();
-  }, [])
+  }, [])//end useEffect
 
   //to get the Images
   const fetchGalleryImages = () => {
@@ -36,7 +36,7 @@ function App() {
       });
   };//end fetch Gallery
 
-  const likeButton = (id) => {
+  const likeButton = (id) => {//used to use the like button
     console.log('clicked',id);
     return fetch(`/gallery/like/${id}`, {
       method:'PUT',
@@ -48,7 +48,7 @@ function App() {
     .catch((error) => {
       console.error(error);
     });
-  };
+  };//end likeButton
 
     return (
       <div className="App">

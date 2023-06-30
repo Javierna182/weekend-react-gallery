@@ -17,8 +17,8 @@ export function GalleryItem({ image, likeButton }) {
     return(
         // <div onClick={() => alert(`${image.src} You Clicked an image`)}>
         //     {image.src}
-        <div style={{float:'left'}} >
-            <div className="card">
+        <div className="card" style={{float:'left'}} >
+            
             <div className="card-header">
             { !isHidden ? <p className="desc">{image.description}</p> : <img src={image.path}/> }
             <div className="card-body">
@@ -28,6 +28,6 @@ export function GalleryItem({ image, likeButton }) {
         </div>
         </div>
         </div>
-        </div>
+        
     )
 }
