@@ -29,9 +29,9 @@ Between the server and client, you'll need two terminal tabs! Because we're usin
 
 ### Images of the application
 
-![Wireframe](example1.png)
-![Wireframe](example2.png)
-![Wireframe](example3.png)
+![Wireframe](public/images/example1.png)
+![Wireframe](public/images/example2.png)
+![Wireframe](public/images/example3.png)
 
 ## Credits
 
